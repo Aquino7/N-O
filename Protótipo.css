@@ -1,0 +1,103 @@
+ .menu-opcoes ul {
+   font-size: 16px;
+ }
+ .menu-opcoes a {
+ color: #FFFFFF;
+ }
+  body {
+   color:#000000;
+   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+ }
+ .menu-opcoes ul li {
+  display: inline;
+  margin-left: 20px;
+}
+.container {
+  margin: 0 auto;
+  width: 940px;
+}
+ header {
+   position: relative;
+ }
+ .banner-destaque {
+  margin: 0 auto;
+  width: 940px;
+}
+ .menu-opcoes {
+   position: absolute;
+   bottom: 0;
+   right: 0;
+ }
+  .painel {
+   margin: 10px 0;
+   padding: 10px;
+   width: 445px;
+ }
+
+ .novidades {
+   float: left;
+ }
+
+ .mais-vendidos {
+   float: right;
+ }
+ .painel li {
+   display: inline-block;
+   vertical-align: top;
+   width: 140px;
+   margin: 2px;
+   padding-bottom: 10px;
+ }
+ .painel h2 {
+   font-size: 24px;
+   font-weight: bold;
+   text-transform: uppercase;
+   margin-bottom: 10px;
+ }
+
+ .painel a {
+   color: #000000;
+   font-size: 15px;
+   text-align: center;
+   text-decoration: none;
+ }
+
+ .novidades {
+   background-color: #E6482C;
+ }
+
+ .mais-vendidos {
+   background-color: #E6482C;
+ }
+ 
+ 
+  .painel li:hover {
+   transform: scale(1.2) rotate(-5deg);
+ }
+  .painel li:nth-child(2n):hover {
+   transform: scale(1.2) rotate(5deg);
+ }
+  .painel li {
+   transition: 0.7s;
+ }
+ .painel li:hover {
+   transition: 0.7s ease-in;
+ }
+
+ .painel li {
+   transition: 0.7s ease-out;
+ }
+ p {
+  margin: 0;
+  text-indent: 3ch;
+}
+p.caldeirao {
+   text-indent: 0;
+   display: inline;
+}
+p.caldeirao + p.caldeirao::before {
+  content: " ¶ ";
+}
+ body {
+background-color: #000000
+}
