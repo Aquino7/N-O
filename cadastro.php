@@ -9,4 +9,4 @@ $senha = $_post['password'];
 
 $sql = "INSERT INTO usuarios(nome, nascimento, email, senha) VALUES ('$name, '$nascimento', '$email', '$senha')";
 
-if(mysqli_query($conexao,$sql)
+if(mysqli_query($conexao,$sql) 
