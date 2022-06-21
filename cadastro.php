@@ -5,8 +5,8 @@ include (conexao.php);
 $nome = $_post['name']; 
 $email = $_post['email'];
 $senha = $_post['password'];
-$mensagem = $_post['mensagem'];
+$mensagem = $_post['message'];
 
-$sql = "INSERT INTO usuarios(nome, nascimento, email, senha) VALUES ('$name', '$email', '$senha', '$mensagem')";
+$sql = "INSERT INTO usuarios(nome, email, senha, mensagem) VALUES ('$name', '$email', '$senha', '$message')";
 
 if(mysqli_query($conexao,$sql) 
