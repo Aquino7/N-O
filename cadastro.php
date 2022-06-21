@@ -3,10 +3,10 @@
 include (conexao.php);
 
 $nome = $_post['name']; 
-$nascimento = $_post['date'];
 $email = $_post['email'];
 $senha = $_post['password'];
+$mensagem = $_post['mensagem'];
 
-$sql = "INSERT INTO usuarios(nome, nascimento, email, senha) VALUES ('$name, '$nascimento', '$email', '$senha')";
+$sql = "INSERT INTO usuarios(nome, nascimento, email, senha) VALUES ('$name', '$email', '$senha', '$mensagem')";
 
 if(mysqli_query($conexao,$sql) 
