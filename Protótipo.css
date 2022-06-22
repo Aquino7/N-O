@@ -101,3 +101,10 @@ p.caldeirao + p.caldeirao::before {
  body {
 background-color: #edecf3
 }
+.canto {
+
+  position: fixed;
+
+  left: 0pt;
+
+}
