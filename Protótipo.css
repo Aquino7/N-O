@@ -101,4 +101,11 @@ p.caldeirao + p.caldeirao::before {
  body {
 background-color: #edecf3
 }
+#imgpos1 {
+  float: right;
+}
 
+#imgpos2 {
+  position: absolute;
+  right: 0px;
+}
