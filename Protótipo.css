@@ -105,7 +105,11 @@ background-color: #edecf3
   float: right;
 }
 
-#imgpos3 {
+#imgpos2 {
   position: absolute;
   right: 520px;
+}
+#imgpos3 {
+  position: absolute;
+  right: 500px;
 }
