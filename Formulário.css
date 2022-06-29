@@ -50,3 +50,23 @@ button {
     /* Esta margem extra representa aproximadamente o mesmo espaço que o espaço entre as labels e os seus campos de texto*/
     margin-left: .5em;
 }
+@mixin  para tablet-retrato {
+  @media ( min-width: 600 px ) { @content ; }
+}
+@mixin  para tablet-paisagem-up {
+  @media ( min-width: 900 px ) { @content ; }
+}
+@mixin  para desktop-up {
+  @media ( min-width: 1200 px ) { @content ; }
+}
+@mixin  para-grande-desktop-up {
+  @media ( min-width: 1800 px ) { @content ; }
+}
+// uso
+.minha-caixa {
+  padding: 10px;
+  
+  @include para desktop-up {
+    padding: 20px;
+  }
+}
