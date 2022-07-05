@@ -3,7 +3,7 @@
  <head>
      <meta charset="utf-8"> 
      <title>Formulário</title>
-	 <link rel="stylesheet" href="Formulrio.css">
+	 <link rel="stylesheet" href="Formulário.css">
       </head>
    <body> 
     <form action="/pagina-processa-dados-do-form" method="post"></form>
@@ -27,8 +27,29 @@
         <button><a target="_blank" href="Protótipo.html">Enviar</a> </button>
     </div>
     <script type="text/javascript">
-        if(document.getElementById("name").value length)
-        // testando e trazendo tamanho digitado que está dentro do campo de 'nome' e verificando (if) que ele é =! 0
+
+		function validacao() {
+            // codigo parte do principio que todos os campos estão preenchidos
+			var dados = document.getElementsByClassName('container')
+            var tamanho = dados.length
+            // tamanho é uma variavel p verificar o tamanho do vetor
+            var temAlguemvazio = false;
+            for(var i=0; i< tamanho; i++){
+                if((dados[i].value==' ')){
+                    temAlguemvazio=true;
+                    break
+                    // verificar se tem alguem vazio, quando identifica break
+                }
+            }
+            if (temAlguemvazio){
+                // quando tem alguem campo não preenchido 
+                alert('por favor, preencha todos os campos!')
+                return false
+            }else{
+                return true
+            }
+		}
+    </script>  
 </form>
 </body>
 </html>
