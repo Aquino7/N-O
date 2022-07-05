@@ -62,7 +62,7 @@ button {
 @mixin  para-grande-desktop-up {
   @media ( min-width: 1800 px ) { @content ; }
 }
-// uso
+/* uso
 .minha-caixa {
   padding: 10px;
   
