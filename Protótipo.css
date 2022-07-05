@@ -125,7 +125,7 @@ background-color: #9e9da5
 @mixin  para-grande-desktop-up {
   @media ( min-width: 1800 px ) { @content ; }
 }
-// uso
+
 .minha-caixa {
   padding: 10px;
   
