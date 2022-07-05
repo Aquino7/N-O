@@ -111,7 +111,7 @@ background-color: #9e9da5
 }
 #imgpos3 {
   position: absolute;
-  right: 575px;
+  right: 550px;
 }
 @mixin  para tablet-retrato {
   @media ( min-width: 600 px ) { @content ; }
