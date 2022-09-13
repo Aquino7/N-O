@@ -21,7 +21,7 @@
 
 /* hover effect of navlist anchor element */
 #navlist a:hover {
-    background-color: #ddd;
+    background-color: rgb(35, 28, 129);
     color: black;
 }
   
