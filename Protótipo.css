@@ -1,135 +1,52 @@
- .menu-opcoes ul {
-   font-size: 16px;
- }
- .menu-opcoes a {
- color: #1a1212;
- }
-  body {
-   color:#0c0c0c;
-   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
- }
- .menu-opcoes ul li {
-  display: inline;
-  margin-left: 20px;
+  /* styling navlist */
+  #navlist {
+    background-color: #0074D9;
+    position: absolute;
+    width: 100%;
 }
-.container {
-  margin: 0 auto;
-  width: 940px;
-}
- header {
-   position: relative;
- }
- .banner-destaque {
-  margin: 0 auto;
-  width: 940px;
-}
- .menu-opcoes {
-   position: absolute;
-   bottom: 0;
-   right: 0;
- }
-  .painel {
-   margin: 10px 0;
-   padding: 10px;
-   width: 445px;
- }
-
- .novidades {
-   float: left;
- }
-
- .mais-vendidos {
-   float: right;
- }
- .painel li {
-   display: inline-block;
-   vertical-align: top;
-   width: 140px;
-   margin: 2px;
-   padding-bottom: 10px;
- }
- .painel h2 {
-   font-size: 24px;
-   font-weight: bold;
-   text-transform: uppercase;
-   margin-bottom: 10px;
- }
-
- .painel a {
-   color: #0e0d0d;
-   font-size: 15px;
-   text-align: center;
-   text-decoration: none;
- }
-
- .novidades {
-background-color: #f8454e
- }
-
- .mais-vendidos {
-background-color: #e03434
- }
- 
- 
-  .painel li:hover {
-   transform: scale(1.2) rotate(-5deg);
- }
-  .painel li:nth-child(2n):hover {
-   transform: scale(1.2) rotate(5deg);
- }
-  .painel li {
-   transition: 0.7s;
- }
- .painel li:hover {
-   transition: 0.7s ease-in;
- }
-
- .painel li {
-   transition: 0.7s ease-out;
- }
- p {
-  margin: 0;
-  text-indent: 3ch;
-}
-p.caldeirao {
-   text-indent: 0;
-   display: inline;
-}
-p.caldeirao + p.caldeirao::before {
-  content: " ¶ ";
-}
- body {
-background-color: #9e9da5
-}
-#imgpos1 {
-  float: right;
-}
-
-#imgpos2 {
-  position: absolute;
-  right: 520px;
-}
-#imgpos3 {
-  position: absolute;
-  right: 550px;
-}
-@mixin  para tablet-retrato {
-  @media ( min-width: 600 px ) { @content ; }
-}
-@mixin  para tablet-paisagem-up {
-  @media ( min-width: 900 px ) { @content ; }
-}
-@mixin  para desktop-up {
-  @media ( min-width: 1200 px ) { @content ; }
-}
-@mixin  para-grande-desktop-up {
-  @media ( min-width: 1800 px ) { @content ; }
-}
-
-.minha-caixa {
-  padding: 10px;
   
-  @include para desktop-up {
-    padding: 20px;
-  }
+/* styling navlist anchor element */
+#navlist a {
+    float:left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 15px;
 }
+.navlist-right{
+    float:right;
+}
+
+/* hover effect of navlist anchor element */
+#navlist a:hover {
+    background-color: #ddd;
+    color: black;
+}
+  
+/* styling search bar */
+.search input[type=text]{
+    width:300px;
+    height:25px;
+    border-radius:25px;
+    border: none;
+
+}
+  
+.search{
+    float:right;
+    margin:7px;
+
+}
+  
+.search button{
+    background-color: #0074D9;
+    color: #f2f2f2;
+    float: right;
+    padding: 5px 10px;
+    margin-right: 16px;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+} 
